@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import './Login.module.css';
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -8,14 +9,14 @@ const Login = () => {
 
     return (
         <div className='container'>
+            <h3 className='text-center text-light mt-5'>Login</h3>
             <div className="login-form">
-                <h3>Login</h3>
                 <div className="username-form">
-                    <label htmlFor="username">Username</label>
+                    <label htmlFor="username" className='text-light'>Username</label>
                     <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
                 </div>
                 <div className="password-form">
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="password" className='text-light'>Password</label>
                     <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <button className='btn btn-primary'>

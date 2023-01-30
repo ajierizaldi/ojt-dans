@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Sidebar from '../partials/Sidebar';
+
 class Dashboard extends Component {
     render() {
         return (
@@ -7,15 +9,7 @@ class Dashboard extends Component {
                 <h4>Container</h4>
                 <div className="row">
                     <div className="col-md-6">
-
-                        <div className="row">
-                            <div className="col-md-6">
-
-                            </div>
-                            <div className="col-md-6">
-
-                            </div>
-                        </div>
+                        <Sidebar />
                     </div>
                     <div className="col-md-6">
 
