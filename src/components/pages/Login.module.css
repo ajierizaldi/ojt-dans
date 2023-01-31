@@ -1,14 +1,9 @@
-body {
+/* body {
     background-image: url('/public/bg.png');
-}
+} */
 
 .login-form {
-    background-color: #fff8dc;
-    padding: 2.5em 2.5em;
-    border-radius: 2em;
-    width: 500px;
-    margin: 0 auto;
-
+    justify-content: center !important;
 }
 
 .username-form {

@@ -9,24 +9,26 @@ const Login = () => {
 
     return (
         <div className='container'>
-            <h3 className='text-center text-light mt-5'>Login</h3>
-            <div className="login-form">
+            <h3 className='text-center mt-5'>Login</h3>
+            <br />
+            <div className="login-form mt-5">
                 <div className="username-form">
-                    <label htmlFor="username" className='text-light'>Username</label>
+                    <label htmlFor="username" className=''>Username</label>
                     <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
                 </div>
                 <div className="password-form">
-                    <label htmlFor="password" className='text-light'>Password</label>
+                    <label htmlFor="password" className=''>Password</label>
                     <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <button className='btn btn-primary'>
-                    <Link to='/dashboard/123' state={
+                    <Link to='/dashboard/123' state={{
+                        data:
                         {
-                            name: username,
+                            firstName: username,
                             username: username,
                             password: password
                         }
-                    }>Login</Link>
+                    }}>Login</Link>
                 </button>
             </div>
         </div>
