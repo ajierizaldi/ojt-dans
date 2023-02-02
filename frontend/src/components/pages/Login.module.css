@@ -1,0 +1,16 @@
+/* body {
+    background-image: url('/public/bg.png');
+} */
+
+.login-form {
+    margin-left: 70px;
+}
+
+.username-form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
