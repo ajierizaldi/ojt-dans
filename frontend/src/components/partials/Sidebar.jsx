@@ -23,8 +23,8 @@ const Sidebar = () => {
                     <Link to='/dashboard/:uid' className="list-group-item list-group-item-action bg-light">
                         <FontAwesomeIcon icon={faHome} /> Home
                     </Link>
-                    <Link to="/profile" className="list-group-item list-group-item-action bg-light">
-                        <FontAwesomeIcon icon={faUser} /> Profile
+                    <Link to="/certificate/:uid" className="list-group-item list-group-item-action bg-light">
+                        <FontAwesomeIcon icon={faUser} /> Certificate
                     </Link>
                     <Link to="/settings" className="list-group-item list-group-item-action bg-light">
                         <FontAwesomeIcon icon={faCog} /> Settings

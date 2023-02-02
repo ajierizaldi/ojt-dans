@@ -34,33 +34,35 @@ const Dashboard = () => {
                                 <div className="col-md-6">
                                     <h3>Daftar Mahasiswa</h3>
                                     {/* fetch data dari json */}
-                                    {
-                                        RegisteredStudentList.map((item, index) => {
-                                            return (
-                                                <div className="card">
-                                                    <div className="card-body">
-                                                        <div key={index}>
-                                                            <p>{item.nik}</p>
-                                                            <p>{item.name}</p>
-                                                            <p>{item.kelas}</p>
-                                                            <button
-                                                                onClick={() => {
-                                                                    setStudent({
-                                                                        id: item.id,
-                                                                        nik: item.nik,
-                                                                        name: item.name,
-                                                                        alamat: item.alamat,
-                                                                        certificate: 'yes',
-                                                                        gender: item.gender,
-                                                                        kelas: item.kelas
-                                                                    })
-                                                                }}
-                                                            >Preview</button>
+                                    <div className="d-flex justify-content-start mt-5">
+                                        {
+                                            RegisteredStudentList.map((item, index) => {
+                                                return (
+                                                    <div className="card p-2" style={{ width: '120px' }}>
+                                                        <div className="card-body">
+                                                            <div key={index}>
+                                                                <p>{item.nik}</p>
+                                                                <p>{item.name}</p>
+                                                                <p>{item.kelas}</p>
+                                                                <button
+                                                                    onClick={() => {
+                                                                        setStudent({
+                                                                            id: item.id,
+                                                                            nik: item.nik,
+                                                                            name: item.name,
+                                                                            alamat: item.alamat,
+                                                                            certificate: 'yes',
+                                                                            gender: item.gender,
+                                                                            kelas: item.kelas
+                                                                        })
+                                                                    }}
+                                                                >Preview</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            )
-                                        })}
+                                                )
+                                            })}
+                                    </div>
                                 </div>
                                 <div className="col-md-6">
                                     {/* preview data */}
