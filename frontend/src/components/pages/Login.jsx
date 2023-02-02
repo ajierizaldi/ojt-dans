@@ -16,6 +16,7 @@ const Login = () => {
                     <label htmlFor="username" className=''>Username :   </label><br />
                     <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
                 </div>
+                <br />
                 <div className="password-form">
                     <label htmlFor="password" className=''>Password :</label><br />
                     <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
@@ -29,7 +30,7 @@ const Login = () => {
                             username: username,
                             password: password
                         }
-                    }} className='text-dark'>Login</Link>
+                    }} className='text-light'>Login</Link>
                 </button>
             </div>
         </div>

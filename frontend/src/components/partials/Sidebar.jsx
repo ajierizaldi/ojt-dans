@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useParams, useLocation } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faHome,
@@ -9,12 +10,17 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Sidebar = () => {
+    let { uid } = useParams();
+    let location = useLocation();
+    let firstName = location.state?.data?.firstName;
+
     return (
         <div className="d-flex" id="wrapper">
             <div className="bg-light border-right" id="sidebar-wrapper">
-                <div className="sidebar-heading">Dashboard </div>
+                <img src="/pic.jpg" alt="pic-profile" className="rounded-circle" style={{ width: '200px' }} />
+                <div className="sidebar-heading text-center">{firstName}</div>
                 <div className="list-group list-group-flush">
-                    <Link to="/" className="list-group-item list-group-item-action bg-light">
+                    <Link to='/dashboard/:uid' className="list-group-item list-group-item-action bg-light">
                         <FontAwesomeIcon icon={faHome} /> Home
                     </Link>
                     <Link to="/profile" className="list-group-item list-group-item-action bg-light">
