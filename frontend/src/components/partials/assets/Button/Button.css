@@ -3,7 +3,7 @@
     padding: 0.5rem 1rem;
     border: 1px solid #000;
     border-radius: 0.25rem;
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #000;
     font-size: 1rem;
     font-weight: 400;
@@ -20,26 +20,26 @@
 }
 
 /* Semantics Button */
-.Primary {
+.primary {
     background-color: #7b72f7
 }
 
-.Secondary {
+.secondary {
     background-color: rgba(255, 255, 255, 0.349);
 }
 
-.Danger {
+.danger {
     background-color: #ff0000;
 }
 
-.Success {
+.success {
     background-color: #00ff00;
 }
 
-.Warning {
+.warning {
     background-color: #ffff00;
 }
 
-.Info {
+.info {
     background-color: #00ffff;
 }
