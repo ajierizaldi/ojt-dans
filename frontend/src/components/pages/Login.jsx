@@ -22,16 +22,20 @@ const Login = () => {
                     <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <br />
-                <button className='btn btn-primary text-dark mx-auto d-flex'>
-                    <Link to='/dashboard/123' state={{
-                        data:
-                        {
-                            firstName: username,
-                            username: username,
-                            password: password
-                        }
-                    }} className='text-light'>Login</Link>
-                </button>
+
+                <Link to='/dashboard/123' state={{
+                    data:
+                    {
+                        firstName: username,
+                        username: username,
+                        password: password
+                    }
+                }} className='text-light'>
+                    <button className='btn btn-primary text-light mx-auto d-flex'>
+                        Login
+                    </button>
+                </Link>
+
             </div>
         </div>
     );

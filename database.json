@@ -1,0 +1,82 @@
+{
+    "matakuliah": [
+        {
+            "id": 1,
+            "nama": "Pemrograman Web",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 2,
+            "nama": "Pemrograman Mobile",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 3,
+            "nama": "Pemrograman Desktop",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 4,
+            "nama": "Pemrograman Berbasis Web",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 5,
+            "nama": "Pemrograman Berbasis Mobile",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 6,
+            "nama": "Pemrograman Berbasis Desktop",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 7,
+            "nama": "Pemrograman Berbasis Cloud",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 8,
+            "nama": "Pemrograman Berbasis IoT",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 9,
+            "nama": "Pemrograman Berbasis Blockchain",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 10,
+            "nama": "Pemrograman Berbasis AR/VR",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 11,
+            "nama": "Pemrograman Berbasis Game",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 12,
+            "nama": "Pemrograman Berbasis AI",
+            "sks": 3,
+            "semester": 3
+        },
+        {
+            "id": 13,
+            "nama": "Pemrograman Berbasis Big Data",
+            "sks": 3,
+            "semester": 3
+        }
+    ]
+}

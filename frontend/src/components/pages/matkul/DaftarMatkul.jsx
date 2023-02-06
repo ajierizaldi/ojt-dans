@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { getData } from '../../../redux/action/action'
 
-export const DaftarMatkul = () => {
-    const { isResult, isFetching, isError } = useSelector(state => state.identity)
+const DaftarMatkul = () => {
+    const { isResult, isFetching, isError } = useSelector((state) => state.identity)
 
     const dispatch = useDispatch()
 
@@ -19,9 +19,7 @@ export const DaftarMatkul = () => {
                 isResult ? (
                     isResult.map((item, index) => {
                         return (
-                            <div key={index}>
-                                <p>{item.nama} - {item.sks}</p>
-                            </div>
+                            <p key={index}>{item.nama} - {item.sks}</p>
                         )
                     }
                     )

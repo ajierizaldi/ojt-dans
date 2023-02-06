@@ -7,7 +7,7 @@ export const getData = () => {
             payload: {
                 loading: true,
                 data: false,
-                error: false
+                errorMessage: false
             }
         });
         axios({
@@ -21,7 +21,7 @@ export const getData = () => {
                     payload: {
                         loading: false,
                         data: response.data,
-                        errorMsg: false
+                        errorMessage: false
                     }
                 });
             })
@@ -31,7 +31,7 @@ export const getData = () => {
                     payload: {
                         loading: false,
                         data: false,
-                        errorMsg: error.message
+                        errorMessage: error.message
                     }
                 });
             });

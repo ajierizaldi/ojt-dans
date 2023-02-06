@@ -11,7 +11,7 @@ export const identity = (state = initState, action) => {
                 ...state,
                 isResult: action.payload.data,
                 isFetching: action.payload.loading,
-                isError: action.payload.errorMsg,
+                isError: action.payload.errorMessage,
             }
         default:
             return state;
