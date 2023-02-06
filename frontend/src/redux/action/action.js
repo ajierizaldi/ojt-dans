@@ -6,12 +6,14 @@ export const getData = () => {
             type: "GET_DATA",
             payload: {
                 loading: true,
-                data: [],
-                error: ""
+                data: false,
+                error: false
             }
         });
-        axios.get("http://localhost:3000/RegisteredStudentList", {
-            timeout: 10000
+        axios({
+            method: "GET",
+            url: "http://localhost:5000/matakuliah",
+            timeout: 5000
         })
             .then((response) => {
                 dispatch({
@@ -28,7 +30,7 @@ export const getData = () => {
                     type: "GET_DATA",
                     payload: {
                         loading: false,
-                        data: [],
+                        data: false,
                         errorMsg: error.message
                     }
                 });

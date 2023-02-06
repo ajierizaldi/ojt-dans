@@ -26,8 +26,8 @@ const Sidebar = () => {
                     <Link to="/certificate/:uid" className="list-group-item list-group-item-action bg-light">
                         <FontAwesomeIcon icon={faUser} /> Certificate
                     </Link>
-                    <Link to="/settings" className="list-group-item list-group-item-action bg-light">
-                        <FontAwesomeIcon icon={faCog} /> Settings
+                    <Link to="/matkul" className="list-group-item list-group-item-action bg-light">
+                        <FontAwesomeIcon icon={faCog} /> Daftar Matkul
                     </Link>
                 </div>
             </div>
